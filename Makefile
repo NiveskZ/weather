@@ -11,7 +11,7 @@ docker-build:
 	docker build -t $(IMAGE_TAG) .
 
 docker-run: docker-build
-	docker run -it --rm -p 5000:5000 $(IMAGE_TAG)
+	docker run -it --rm -p 5000:80 $(IMAGE_TAG)
 
 docker-background: docker-build		
-	docker run --restart=unless-stopped -d -p 5000:5000 $(IMAGE_TAG)
+	docker run --restart=unless-stopped -d -p 5000:80 $(IMAGE_TAG)
