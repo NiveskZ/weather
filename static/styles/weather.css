@@ -1,0 +1,21 @@
+.weather-cointainer{
+    background: rgb(95, 93, 243);
+    text-align: center;
+}
+
+.title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+.description{
+    font-size: 12px;
+    margin: 0;
+}
+.temperature{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+}

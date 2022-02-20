@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/weather.css') }}">
+
+</head>
+<body>
+    <form class="row g-3" action="/" >
+        <div class="col-auto">
+            <input type="search" name="country" class="form-control" title="Search country or city name" accesskey="f" id="countryID" placeholder="Search country" autocomplete="off">
+            <button type="submit" class="btn btn-primary mb-3">Search</button>
+        </div>
+    </form>
+
+    <div class="weather-cointainer"> 
+        <img src={{weather.icon}}>
+        <p><span class="title"> {{ weather.local_name }}:</span>
+        <span class="temperature"> {{ weather.temp }} °C </span> 
+        <br>
+        <span class="temperature"> {{ weather.feels_like}} °C </span> 
+        <br>
+        <span class="description"> {{ weather.description }}</span></p>
+    </div>
+</body>
+</html>
