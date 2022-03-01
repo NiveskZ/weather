@@ -5,17 +5,25 @@
 
 .title{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
+    font-weight: 300;
 }
 
 .description{
-    font-size: 12px;
+    font-size: 20px;
     margin: 0;
 }
 .temperature{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
     font-weight: bold;
+}
+
+.feels_like{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin: 0;
+    
 }

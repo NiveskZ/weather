@@ -17,14 +17,17 @@
         </div>
     </form>
 
-    <div class="weather-cointainer"> 
+    <div class="weather-cointainer">
+        
         <img src={{weather.icon}}>
-        <p><span class="title"> {{ weather.local_name }}:</span>
+        <h1><span class="title"> {{ weather.local_name }}</h1>
         <span class="temperature"> {{ weather.temp }} °C </span> 
         <br>
-        <span class="temperature"> {{ weather.feels_like}} °C </span> 
+        <span style="font-size: 20px;"> Feels like: </span> 
+        <span class="feels_like">{{ weather.feels_like}} °C</span>
         <br>
-        <span class="description"> {{ weather.description }}</span></p>
+        <span class="description"> Description: {{ weather.description }}</span></p>
+        
     </div>
 </body>
 </html>
